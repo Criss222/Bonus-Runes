@@ -1,0 +1,116 @@
+public enum BonusType
+	{
+		EXP,
+		DROP
+	}
+	
+	public float getBonus(BonusType type)
+	{
+		switch (type)
+		{
+			case EXP:
+				if (getInventory().getItemByItemId(23099) != null)
+				{
+					return 6.0f; /** 500% */ /** Rune drop 500% **/
+				}
+				if (getInventory().getItemByItemId(23098) != null)
+				{
+					return 5.0f; /** 400% */
+				}
+				if (getInventory().getItemByItemId(23097) != null)
+				{
+					return 4.0f; /** 300% */
+				}
+				if (getInventory().getItemByItemId(23096) != null)
+				{
+					return 3.0f; /** 200% */
+				}
+				if (getInventory().getItemByItemId(23095) != null)
+				{
+					return 2.0f; /** 100% */
+				}
+				if (getInventory().getItemByItemId(23094) != null)
+				{
+					return 1.50f; /** 50% */
+				}
+				break;
+			case DROP:
+				if (getInventory().getItemByItemId(23093) != null)
+				{
+					return 6.0f; /** 500% */
+				}
+				if (getInventory().getItemByItemId(23092) != null)
+				{
+					return 5.0f; /** 400% */
+				}
+				if (getInventory().getItemByItemId(23091) != null)
+				{
+					return 4.0f; /** 300% */
+				}
+				if (getInventory().getItemByItemId(23090) != null)
+				{
+					return 3.0f; /** 200% */
+				}
+				if (getInventory().getItemByItemId(23089) != null)
+				{
+					return 2.0f; /** 100% */
+				}
+				if (getInventory().getItemByItemId(23088) != null)
+				{
+					return 1.50f; /** 50% */
+				}
+				
+				if (getInventory().getItemByItemId(23087) != null)
+				{
+					return 11.0f; /** 1000% */
+				}
+				if (getInventory().getItemByItemId(23086) != null)
+				{
+					return 6.0f; /** 500% */
+				}
+				if (getInventory().getItemByItemId(23085) != null)
+				{
+					return 5.0f; /** 400% */
+				}
+				if (getInventory().getItemByItemId(23084) != null)
+				{
+					return 4.0f; /** 300% */
+				}
+				if (getInventory().getItemByItemId(23083) != null)
+				{
+					return 3.0f; /** 200% */
+				}
+				if (getInventory().getItemByItemId(23082) != null)
+				{
+					return 2.0f; /** 100% */
+				}
+				
+				if (getInventory().getItemByItemId(23081) != null)
+				{
+					return 11.0f; /** 1000% */
+				}
+				if (getInventory().getItemByItemId(23080) != null)
+				{
+					return 6.0f; /** 500% */
+				}
+				if (getInventory().getItemByItemId(23079) != null)
+				{
+					return 5.0f; /** 400% */
+				}
+				if (getInventory().getItemByItemId(23078) != null)
+				{
+					return 4.0f; /** 300% */
+				}
+				if (getInventory().getItemByItemId(23077) != null)
+				{
+					return 3.0f; /** 200% */
+				}
+				if (getInventory().getItemByItemId(23076) != null)
+				{
+					return 2.0f; /** 100% */
+				}
+				break;
+		}
+		
+		return 1.0f;
+	}
